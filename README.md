@@ -17,7 +17,18 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+Using uv
+```bash
+uv sync
+```
+
 **Before you push**
 ```bash
 pip freeze > requirements.txt
+```
+
+OR
+
+```bash
+uv export --no-hashes --no-annotate --no-header -o requirements.txt
 ```
